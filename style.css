@@ -3,7 +3,7 @@
     height: auto;
     display: block;
     margin: 0 auto;
-    border-radius: 8px;
+    border-radius: 0; /* minimal */
 }
 body {
     background-color: #fff;
@@ -23,4 +23,35 @@ body {
 .container a {
     color: #fff;
     text-decoration: none;
+}
+/* Simple flex layout: group main content in .content and place aside to the right */
+main {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+main > .content {
+    flex: 1 1 auto;
+}
+
+main > aside {
+    width: 280px; /* slightly narrower */
+    flex-shrink: 0;
+    background: transparent; /* no background */
+    padding: 0; /* minimal padding */
+    box-shadow: none; /* no shadow */
+    border: none;
+}
+
+@media (max-width: 700px) {
+    main {
+        display: block;
+        padding: 12px;
+    }
+    main > aside {
+        width: 100%;
+        margin-top: 12px;
+    }
 }

@@ -1,6 +1,9 @@
-.home-bg {
-    background: url('Media/map south africa.png') no-repeat center center fixed;
-    background-size: cover;
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
 }
 body {
     background-color: #fff;

@@ -33,7 +33,11 @@ main {
 }
 
 main > .content {
-    flex: 1 1 auto;
+    flex: 1;
+    max-width: 800px; /* limit width for readability */ 
+    background: #f9f9f9; /* light background for content */
+    padding: 20px;
+    
 }
 
 main > aside {

@@ -6,7 +6,7 @@
     border-radius: 0; /* minimal */
 }
 body {
-    background-color: #fff;
+    background-color: #c0c0c0;
     background: none; /* Remove the previous background image */
 }
 
@@ -40,15 +40,15 @@ body {
        '3fr' betyr at den første kolonnen tar 3 "brøkdeler" av plassen.
        '1fr' betyr at den andre kolonnen tar 1 "brøkdel" av plassen.
        Totalt er det 4 brøkdeler (3+1), så kolonnene blir 75% og 25% brede. */
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;                       /* Legger til 20px mellomrom mellom grid-elementene (horisontalt og vertikalt) */
     padding: 20px;                   /* Legger til 20px innvendig polstring rundt innholdet */
     max-width: 2000px;               /* Sørger for at containeren ikke blir for bred på store skjermer */
     margin: 20px auto;               /* Sentrerer containeren horisontalt på siden */
-    background-color: #fff;          /* Setter en hvit bakgrunnsfarge for innholdet */
+    background-color: #b0a8a8;          /* Setter en hvit bakgrunnsfarge for innholdet */
     border-radius: 8px;              /* Avrunder hjørnene på containeren */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Legger til en myk skygge for visuell dybde */
-    border-style: dashed;
+    border-style: groove;
 }
 
 .container {

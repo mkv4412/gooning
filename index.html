@@ -9,25 +9,24 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header" role="banner">
-    <div class="container header-inner">
-      <h1 class="brand">Mike's Trip to South Africa</h1>
-      <nav class="primary-nav" aria-label="Primary Navigation">
-        <ul>
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="HTML/vlogs.html">Vlogs</a></li>
-          <li><a href="HTML/AboutSA.html">About SA</a></li>
-          <li><a href="HTML/CTAttractions.html">Cape Town</a></li>
-          <li><a href="HTML/Sources.html">Sources</a></li>
-        </ul>
+  <header class="nav-header" role="banner">
+    <div class="nav-container">
+      <a href="index.html" class="site-title">Mike's Trip to South Africa</a>
+      <nav class="nav-buttons" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-btn active" aria-current="page">Home</a>
+        <a href="HTML/vlogs.html" class="nav-btn">Vlogs</a>
+        <a href="HTML/AboutSA.html" class="nav-btn">About SA</a>
+        <a href="HTML/CTAttractions.html" class="nav-btn">Cape Town</a>
+        <a href="HTML/Sources.html" class="nav-btn">Sources</a>
       </nav>
     </div>
   </header>
 
-  <main id="main" class="main-layout" role="main">
-    <div class="content-area container">
-      <section class="text-box intro">
-        <h2>Plan a memorable trip — practical tips and inspiration</h2>
+  <div class="main-container">
+    <main id="main" class="main-layout" role="main">
+      <div class="content-area">
+        <section class="content-card intro">
+          <h1>Plan a memorable trip — practical tips and inspiration</h1>
         <p>Welcome. This site collects what I've learned traveling South Africa: striking landscapes, local food, safety tips, and suggested routes. Use the quick links to watch vlogs, read background on culture and history, and explore Cape Town highlights.</p>
 
         <div class="two-col">
@@ -47,7 +46,7 @@
         </div>
       </section>
 
-      <section class="text-box details">
+        <section class="content-card details">
         <h3>Suggested itineraries</h3>
         <p>Short trip (5–7 days): Cape Town highlights — Table Mountain, Cape Point, Kirstenbosch and a day in the Winelands.</p>
         <p>Two-week trip: Add Garden Route stops, charming towns (Hermanus, Knysna), and a Kruger safari for wildlife.</p>
@@ -58,16 +57,9 @@
         <h3>Safety & awareness</h3>
         <p>Exercise normal travel caution: avoid showing valuables, ask locals about areas to avoid after dark, and prefer guided excursions in unfamiliar neighborhoods.</p>
       </section>
+      </div>
 
-      <section class="button-list actions">
-        <a class="btn" href="HTML/vlogs.html">Watch Vlogs</a>
-        <a class="btn" href="HTML/AboutSA.html">Learn About SA</a>
-        <a class="btn" href="HTML/CTAttractions.html">Cape Town Guide</a>
-        <a class="btn" href="HTML/Sources.html">Sources & Links</a>
-      </section>
-    </div>
-
-    <aside class="side-gallery" aria-label="Images and gallery">
+      <aside class="side-gallery" aria-label="Images and gallery">
       <figure class="photo">
         <img src="Media/KappDetGodeHåp.jpg" alt="Cape Point coastline" class="responsive-img" loading="lazy">
         <figcaption>Cape Point — dramatic coastline</figcaption>
@@ -82,8 +74,9 @@
         <img src="Media/SANature.jpg" alt="South African nature reserve" class="responsive-img" loading="lazy">
         <figcaption>Wildlife & landscapes</figcaption>
       </figure>
-    </aside>
-  </main>
+      </aside>
+    </main>
+  </div>
 
   <footer class="site-footer" role="contentinfo">
     <div class="container footer-inner">
@@ -91,7 +84,6 @@
       <nav aria-label="Footer Navigation">
         <ul>
           <li><a href="HTML/Sources.html">Sources</a></li>
-          <li><a href="HTML/AboutSA.html">About</a></li>
         </ul>
       </nav>
     </div>

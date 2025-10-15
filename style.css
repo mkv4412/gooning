@@ -1,104 +1,124 @@
-/* Modern Reset and Base Styles */
+/* =====================================================
+   MODERN CSS RESET AND BASE STYLES
+   ===================================================== */
+
+/* Universal reset for consistent cross-browser styling */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Include padding and border in element width/height */
 }
 
+/* Base body styles - modern typography and gradient background */
 body {
     font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: #2c3e50;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-height: 100vh;
+    line-height: 1.6; /* Improved readability */
+    color: #2c3e50; /* Dark gray text for good contrast */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Blue-purple gradient */
+    min-height: 100vh; /* Ensure full viewport height */
 }
 
-/* Navigation Header */
+/* =====================================================
+   NAVIGATION HEADER - STICKY TOP NAVIGATION
+   ===================================================== */
+
+/* Main navigation header with glass-morphism effect */
 .nav-header {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Glass-morphism blur effect */
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     padding: 1rem 0;
-    position: sticky;
+    position: sticky; /* Stays at top when scrolling */
     top: 0;
-    z-index: 100;
+    z-index: 100; /* Above other content */
 }
 
+/* Container for navigation content with responsive layout */
 .nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
+    max-width: 1200px; /* Limit maximum width */
+    margin: 0 auto; /* Center horizontally */
+    padding: 0 2rem; /* Horizontal padding */
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between title and nav */
+    align-items: center; /* Vertical center alignment */
+    flex-wrap: wrap; /* Wrap on smaller screens */
+    gap: 1rem; /* Space between wrapped items */
 }
 
+/* Site title with gradient text effect */
 .site-title {
     font-size: 1.8rem;
     font-weight: 700;
     color: #2c3e50;
     text-decoration: none;
-    background: linear-gradient(45deg, #667eea, #764ba2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: linear-gradient(45deg, #667eea, #764ba2); /* Gradient for text */
+    -webkit-background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Make text transparent to show gradient */
     background-clip: text;
 }
 
+/* Navigation buttons container */
 .nav-buttons {
     display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
+    gap: 0.5rem; /* Space between buttons */
+    flex-wrap: wrap; /* Wrap buttons on small screens */
 }
 
+/* Individual navigation button styling */
 .nav-btn {
     padding: 0.75rem 1.5rem;
-    background: linear-gradient(45deg, #667eea, #764ba2);
+    background: linear-gradient(45deg, #667eea, #764ba2); /* Gradient background */
     color: white;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 50px; /* Pill-shaped buttons */
     font-weight: 600;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; /* Smooth hover animations */
     border: none;
     cursor: pointer;
     font-size: 0.9rem;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3); /* Colored shadow */
 }
 
+/* Hover effects for navigation buttons */
 .nav-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
-    background: linear-gradient(45deg, #5a6fd8, #6a4190);
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4); /* Deeper shadow */
+    background: linear-gradient(45deg, #5a6fd8, #6a4190); /* Darker gradient */
 }
 
+/* Active state for current page button */
 .nav-btn.active {
-    background: linear-gradient(45deg, #2c3e50, #34495e);
+    background: linear-gradient(45deg, #2c3e50, #34495e); /* Dark gradient for active */
     box-shadow: 0 4px 15px rgba(44, 62, 80, 0.3);
 }
 
-/* Main Content Container */
+/* =====================================================
+   MAIN CONTENT LAYOUT AND CARD SYSTEM
+   ===================================================== */
+
+/* Main container for all page content */
 .main-container {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 2rem;
+    max-width: 1200px; /* Limit content width for readability */
+    margin: 2rem auto; /* Center with vertical spacing */
+    padding: 0 2rem; /* Horizontal padding for mobile */
 }
 
-/* Content Cards */
+/* Content cards with glass-morphism effect */
 .content-card {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.95); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Glass-morphism blur */
+    border-radius: 20px; /* Rounded corners */
+    padding: 2rem; /* Internal spacing */
+    margin-bottom: 2rem; /* Space between cards */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
 }
 
+/* Typography hierarchy within content cards */
 .content-card h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    background: linear-gradient(45deg, #667eea, #764ba2);
+    background: linear-gradient(45deg, #667eea, #764ba2); /* Gradient text */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -108,137 +128,165 @@ body {
 .content-card h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    color: #2c3e50;
+    color: #2c3e50; /* Dark gray */
     font-weight: 600;
 }
 
 .content-card h3 {
     font-size: 1.4rem;
     margin-bottom: 0.8rem;
-    color: #34495e;
+    color: #34495e; /* Slightly lighter gray */
     font-weight: 600;
 }
 
 .content-card p {
     margin-bottom: 1rem;
-    color: #555;
-    font-size: 1.1rem;
+    color: #555; /* Medium gray for body text */
+    font-size: 1.1rem; /* Slightly larger for readability */
 }
 
+/* List styling within content cards */
 .content-card ul {
     margin-bottom: 1rem;
-    padding-left: 1.5rem;
+    padding-left: 1.5rem; /* Indent for bullet points */
 }
 
 .content-card li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem; /* Space between list items */
     color: #555;
 }
 
-/* Two Column Layout */
+/* =====================================================
+   LAYOUT SYSTEMS - GRID AND FLEXBOX
+   ===================================================== */
+
+/* Two-column layout using CSS Grid */
 .two-col {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin: 2rem 0;
+    grid-template-columns: 1fr 1fr; /* Equal width columns */
+    gap: 2rem; /* Space between columns */
+    margin: 2rem 0; /* Vertical spacing */
 }
 
-/* Button Lists and Action Buttons */
+/* =====================================================
+   BUTTON COMPONENTS AND INTERACTIVE ELEMENTS
+   ===================================================== */
+
+/* Container for action buttons using Flexbox */
 .button-list, .action-buttons {
     display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin: 2rem 0;
-    justify-content: center;
+    gap: 1rem; /* Space between buttons */
+    flex-wrap: wrap; /* Wrap to new line if needed */
+    margin: 2rem 0; /* Vertical spacing */
+    justify-content: center; /* Center buttons horizontally */
 }
 
+/* Base button styling for all interactive buttons */
 .btn, .action-btn {
     padding: 1rem 2rem;
-    background: linear-gradient(45deg, #667eea, #764ba2);
+    background: linear-gradient(45deg, #667eea, #764ba2); /* Gradient background */
     color: white;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 50px; /* Pill shape */
     font-weight: 600;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; /* Smooth animations */
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 150px;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    min-width: 150px; /* Minimum button width */
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3); /* Colored shadow */
     font-size: 1rem;
 }
 
+/* Hover effects for all buttons */
 .btn:hover, .action-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
-    background: linear-gradient(45deg, #5a6fd8, #6a4190);
+    transform: translateY(-3px); /* Lift effect */
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4); /* Deeper shadow */
+    background: linear-gradient(45deg, #5a6fd8, #6a4190); /* Darker gradient */
 }
 
-/* Grid Container for Attractions/Links */
+/* Grid container for attraction/link buttons */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin: 2rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 1.5rem; /* Space between grid items */
+    margin: 2rem 0; /* Vertical spacing */
 }
 
+/* Buttons within grid containers */
 .grid-container .btn {
-    min-height: 60px;
+    min-height: 60px; /* Consistent button height */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 0.95rem;
+    font-size: 0.95rem; /* Slightly smaller text for grid buttons */
 }
 
-/* Image Styles */
+/* =====================================================
+   IMAGE AND MEDIA STYLES
+   ===================================================== */
+
+/* Responsive image styling with hover effects */
 .responsive-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-    margin: 1rem auto;
+    max-width: 100%; /* Never exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Soft shadow */
+    margin: 1rem auto; /* Center with vertical spacing */
     display: block;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* Smooth hover animation */
 }
 
+/* Subtle zoom effect on image hover */
 .responsive-img:hover {
-    transform: scale(1.02);
+    transform: scale(1.02); /* Slight scale increase */
 }
 
-/* Gallery Styles */
+/* =====================================================
+   GALLERY AND PHOTO LAYOUTS
+   ===================================================== */
+
+/* Sidebar gallery layout */
 .side-gallery {
     display: grid;
-    gap: 2rem;
+    gap: 2rem; /* Space between gallery items */
     margin-top: 2rem;
 }
 
+/* Individual photo containers with card styling */
 .photo {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.95); /* Semi-transparent background */
     padding: 1rem;
     border-radius: 15px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
+/* Photo captions */
 .photo figcaption {
     text-align: center;
     margin-top: 0.5rem;
-    color: #666;
-    font-style: italic;
+    color: #666; /* Gray text */
+    font-style: italic; /* Italic styling for captions */
 }
 
-/* Main Layout for Home Page */
+/* =====================================================
+   MAIN PAGE LAYOUT GRID
+   ===================================================== */
+
+/* Two-column layout for home page: content + sidebar */
 .main-layout {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 2fr 1fr; /* 2/3 content, 1/3 sidebar */
+    gap: 2rem; /* Space between columns */
     margin: 2rem 0;
 }
 
+/* Content area with flexible column layout */
 .content-area {
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    flex-direction: column; /* Stack content vertically */
+    gap: 2rem; /* Space between content sections */
 }
 
 /* Footer */

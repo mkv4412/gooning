@@ -1,48 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">    
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mike's Trip to South Africa</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <div class="container">
-      <a href="HTML/vlogs.html">Vlogs</a>
-      <a href="HTML/AboutSA.html">About SA</a>
-      <a href="HTML/CTAttractions.html">Cape Town Attractions</a>
-      <a href="HTML/Sources.html">Sources</a>
-    </div>
-  </nav>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <main class="main-layout">
-    <div class="content-area">
-      <section class="text-box">
-        <h1>Mike's Trip to South Africa</h1>
-        <p>Welcome to the homepage. In this blog I'll be telling you all you need to be aware of if you're thinking of taking a trip to SA.</p>
-        <p>From a nation whose population was heavily separated by Apartheid to one of the sole greatest countries you could visit for an unforgettable experience, this is South Africa. On the top of the page you'll find all the content I've made to show you a little taste test of how South Africa is.</p>
-
-        <h2>In this blog you'll find:</h2>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <h1 class="brand">Mike's Trip to South Africa</h1>
+      <nav class="primary-nav" aria-label="Primary Navigation">
         <ul>
-          <li>Must-see attractions and hidden gems</li>
-          <li>Practical advice on safety, transportation, and accommodations</li>
-          <li>Delicious South African cuisine and where to find it</li>
-          <li>Rich cultural experiences and festivals you won't want to miss</li>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="HTML/vlogs.html">Vlogs</a></li>
+          <li><a href="HTML/AboutSA.html">About SA</a></li>
+          <li><a href="HTML/CTAttractions.html">Cape Town</a></li>
+          <li><a href="HTML/Sources.html">Sources</a></li>
         </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="main-layout" role="main">
+    <div class="content-area container">
+      <section class="text-box intro">
+        <h2>Plan a memorable trip — practical tips and inspiration</h2>
+        <p>Welcome. This site collects what I've learned traveling South Africa: striking landscapes, local food, safety tips, and suggested routes. Use the quick links to watch vlogs, read background on culture and history, and explore Cape Town highlights.</p>
+
+        <div class="two-col">
+          <div>
+            <h3>Why visit?</h3>
+            <p>South Africa combines dramatic scenery — from Table Mountain to wild savanna — with a rich cultural tapestry and world-class food and wine. It’s ideal for nature lovers, city explorers, and culture-minded travellers.</p>
+          </div>
+          <div>
+            <h3>Quick essentials</h3>
+            <ul>
+              <li>Currency: ZAR (Rand). Carry small cash for markets.</li>
+              <li>Transport: rent a car for freedom; use registered shuttles in cities.</li>
+              <li>Health: bring sunscreen, insect repellent, and basic meds.</li>
+              <li>Timing: spring/autumn (Sept–Nov, Mar–May) = pleasant weather and fewer crowds.</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
-      <section class="button-list">
-        <a href="HTML/vlogs.html">Vlogs</a>
-        <a href="HTML/AboutSA.html">About SA</a>
-        <a href="HTML/CTAttractions.html">Cape Town Attractions</a>
-        <a href="HTML/Sources.html">Sources</a>
+      <section class="text-box details">
+        <h3>Suggested itineraries</h3>
+        <p>Short trip (5–7 days): Cape Town highlights — Table Mountain, Cape Point, Kirstenbosch and a day in the Winelands.</p>
+        <p>Two-week trip: Add Garden Route stops, charming towns (Hermanus, Knysna), and a Kruger safari for wildlife.</p>
+
+        <h3>Food & culture</h3>
+        <p>Try braai (barbecue), bobotie, biltong and a local wine pairing. Engage respectfully — ask before photographing people and learn a few greetings (e.g., "Hello" / "Sawubona").</p>
+
+        <h3>Safety & awareness</h3>
+        <p>Exercise normal travel caution: avoid showing valuables, ask locals about areas to avoid after dark, and prefer guided excursions in unfamiliar neighborhoods.</p>
+      </section>
+
+      <section class="button-list actions">
+        <a class="btn" href="HTML/vlogs.html">Watch Vlogs</a>
+        <a class="btn" href="HTML/AboutSA.html">Learn About SA</a>
+        <a class="btn" href="HTML/CTAttractions.html">Cape Town Guide</a>
+        <a class="btn" href="HTML/Sources.html">Sources & Links</a>
       </section>
     </div>
 
-    <aside>
-      <img src="Media/KappDetGodeHåp.jpg" alt="Ankommer Kapp Det Gode Håp" class="responsive-img">
-      <img src="Media/map south africa.png" alt="Map of South Africa" class="responsive-img">
-      <img src="Media/SANature.jpg" alt="South African Nature" class="responsive-img">
+    <aside class="side-gallery" aria-label="Images and gallery">
+      <figure class="photo">
+        <img src="Media/KappDetGodeHåp.jpg" alt="Cape Point coastline" class="responsive-img" loading="lazy">
+        <figcaption>Cape Point — dramatic coastline</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="Media/map south africa.png" alt="Map of South Africa" class="responsive-img" loading="lazy">
+        <figcaption>Overview map</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="Media/SANature.jpg" alt="South African nature reserve" class="responsive-img" loading="lazy">
+        <figcaption>Wildlife & landscapes</figcaption>
+      </figure>
     </aside>
   </main>
-</body> 
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>© 2025 Mike's Trip to South Africa — photos and notes from personal travel. For more resources, see the Sources page.</p>
+      <nav aria-label="Footer Navigation">
+        <ul>
+          <li><a href="HTML/Sources.html">Sources</a></li>
+          <li><a href="HTML/AboutSA.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

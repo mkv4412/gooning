@@ -15,11 +15,13 @@
 	<header class="nav-header" role="banner">
 		<div class="nav-container">
 			<a href="../index.html" class="site-title">Mike's Trip to South Africa</a>
-			<nav class="nav-buttons" aria-label="Primary Navigation">
+      <nav class="nav-buttons" aria-label="Primary Navigation">
 				<a href="../index.html" class="nav-btn">Home</a>
 				<a href="vlogs.html" class="nav-btn">Vlogs</a>
 				<a href="AboutSA.html" class="nav-btn">About SA</a>
 				<a href="CTAttractions.html" class="nav-btn active" aria-current="page">Cape Town</a>
+				<a href="SAFacts.html" class="nav-btn">SA Facts</a>
+				<a href="Dining.html" class="nav-btn">Dining</a>
 				<a href="Sources.html" class="nav-btn">Sources</a>
 			</nav>
 		</div>
@@ -36,18 +38,73 @@
 
 			<!-- ATTRACTIONS GRID: External links to tour booking sites -->
 			<section class="content-card">
-				<h2>Top Attractions & Tours</h2>
-				<!-- CSS Grid layout for responsive attraction buttons -->
+				<h2>Top Attractions with Details</h2>
+				
+				<!-- Table Mountain -->
+				<div style="border-left: 4px solid #667eea; padding-left: 1.5rem; margin-bottom: 2rem;">
+					<h3>Table Mountain Cableway</h3>
+					<p><strong>Opening Hours:</strong> Daily 8:00AM-6:00PM (weather dependent)</p>
+					<p><strong>Entrance Fee:</strong> Adults R395 return, Children R200, Students R315</p>
+					<p><strong>Description:</strong> Iconic flat-topped mountain offering 360° views of Cape Town. Cable car rotates during 5-minute journey to summit.</p>
+					<p><strong>Tips:</strong> Book online to avoid queues, check weather conditions, bring warm clothes for summit.</p>
+				</div>
+
+				<!-- Robben Island -->
+				<div style="border-left: 4px solid #764ba2; padding-left: 1.5rem; margin-bottom: 2rem;">
+					<h3>Robben Island Museum</h3>
+					<p><strong>Opening Hours:</strong> Daily tours at 9:00AM, 11:00AM, 1:00PM, 3:00PM</p>
+					<p><strong>Entrance Fee:</strong> Adults R320, Students/Pensioners R200, Children (under 18) R160</p>
+					<p><strong>Description:</strong> UNESCO World Heritage Site where Nelson Mandela was imprisoned. Includes ferry ride and guided tour by former political prisoner.</p>
+					<p><strong>Tips:</strong> Book weeks in advance, bring ID, tour lasts 3.5 hours total including ferry.</p>
+				</div>
+
+				<!-- V&A Waterfront -->
+				<div style="border-left: 4px solid #2c3e50; padding-left: 1.5rem; margin-bottom: 2rem;">
+					<h3>V&A Waterfront</h3>
+					<p><strong>Opening Hours:</strong> Daily 9:00AM-11:00PM (shops/restaurants vary)</p>
+					<p><strong>Entrance Fee:</strong> Free to enter (individual attractions charge separately)</p>
+					<p><strong>Description:</strong> Historic harbor with shopping, dining, entertainment, and attractions like Two Oceans Aquarium and Zeitz Museum.</p>
+					<p><strong>Tips:</strong> Allow full day, great for sunset, Two Oceans Aquarium R235 adults.</p>
+				</div>
+
+				<!-- Boulders Beach -->
+				<div style="border-left: 4px solid #e74c3c; padding-left: 1.5rem; margin-bottom: 2rem;">
+					<h3>Boulders Penguin Colony</h3>
+					<p><strong>Opening Hours:</strong> Daily 8:00AM-5:00PM (March-April until 6:30PM)</p>
+					<p><strong>Entrance Fee:</strong> Adults R152, Children R76, SA residents R76/R38</p>
+					<p><strong>Description:</strong> Home to over 2,000 African penguins in their natural habitat. Protected boardwalks for viewing.</p>
+					<p><strong>Tips:</strong> Early morning or late afternoon for best viewing, combine with Cape Point visit.</p>
+				</div>
+
+				<!-- Cape Point -->
+				<div style="border-left: 4px solid #f39c12; padding-left: 1.5rem; margin-bottom: 2rem;">
+					<h3>Cape Point Nature Reserve</h3>
+					<p><strong>Opening Hours:</strong> Daily 6:00AM-6:00PM (April-September until 5:00PM)</p>
+					<p><strong>Entrance Fee:</strong> Adults R390, Children R195, SA residents R75/R40</p>
+					<p><strong>Description:</strong> Dramatic cliffs, lighthouse, and the famous "Cape of Good Hope" sign. Part of Table Mountain National Park.</p>
+					<p><strong>Tips:</strong> Drive scenic Chapman's Peak, funicular to lighthouse R80 return, baboons present - don't feed!</p>
+				</div>
+
+				<!-- Kirstenbosch Gardens -->
+				<div style="border-left: 4px solid #27ae60; padding-left: 1.5rem; margin-bottom: 2rem;">
+					<h3>Kirstenbosch Botanical Gardens</h3>
+					<p><strong>Opening Hours:</strong> Daily 8:00AM-6:00PM (April-August until 6:00PM)</p>
+					<p><strong>Entrance Fee:</strong> Adults R85, Students/Pensioners R40, Children (under 6) Free</p>
+					<p><strong>Description:</strong> World-renowned botanical garden showcasing South African flora. Tree Canopy Walkway and outdoor concerts.</p>
+					<p><strong>Tips:</strong> Sunday concerts in summer (Nov-April), Tree Canopy Walkway additional R40.</p>
+				</div>
+			</section>
+
+			<section class="content-card">
+				<h2>Adventure Activities</h2>
+				<!-- CSS Grid layout for activity booking links -->
 				<div class="grid-container">
-					<a href="https://www.onthegotours.com/South-Africa/Table-Mountain-to-Victoria-Falls-20-days" class="btn">Table Mountain Tour</a>
-					<a href="https://www.getyourguide.com/no-no/-l3860/" class="btn">Robben Island</a>
-					<a href="https://www.viator.com/tours/Cape-Town/Big-Five-Safari-Guided-Day-Tour-from-Cape-Town/d318-26736P8" class="btn">Big 5 Safari</a>
-					<a href="https://www.viator.com/tours/Cape-Town/Private-Cape-of-Goodhope-and-Cape-point-Tours/d318-12189P1" class="btn">Cape of Good Hope</a>
-					<a href="https://www.getyourguide.com/cape-town-l3860/" class="btn">City Tour</a>
-					<a href="https://www.getyourguide.com/cape-town-l3860/" class="btn">Table Mountain Fast Track</a>
-					<a href="https://www.viator.com/tours/Cape-Town/Boulders-Penguins-and-Cape-of-Good-Hope-Half-Day-Shared-Tour/d318-12189P106" class="btn">Boulders Penguins</a>
-					<a href="https://www.viator.com/tours/Cape-Town/Helicopter-Flight-over-Cape-Town/d318-26736P1" class="btn">Helicopter Tour</a>
-					<a href="https://www.viator.com/tours/Cape-Town/Tandem-Paragliding-in-Cape-Town/d318-224899P1" class="btn">Paragliding</a>
+					<a href="https://www.viator.com/tours/Cape-Town/Big-Five-Safari-Guided-Day-Tour-from-Cape-Town/d318-26736P8" class="btn">Big 5 Safari Day Trip</a>
+					<a href="https://www.viator.com/tours/Cape-Town/Helicopter-Flight-over-Cape-Town/d318-26736P1" class="btn">Helicopter Tours</a>
+					<a href="https://www.viator.com/tours/Cape-Town/Tandem-Paragliding-in-Cape-Town/d318-224899P1" class="btn">Paragliding Adventures</a>
+					<a href="https://www.getyourguide.com/cape-town-l3860/" class="btn">Wine Tour Packages</a>
+					<a href="https://www.viator.com/tours/Cape-Town/Shark-Cage-Diving-Day-Trip-from-Cape-Town/d318-26736P2" class="btn">Shark Cage Diving</a>
+					<a href="https://www.getyourguide.com/cape-town-l3860/" class="btn">Township Cultural Tours</a>
 				</div>
 			</section>
 
